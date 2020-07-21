@@ -1,1 +1,1 @@
-# aseprite-to-godot-variables
+# Aseprite to Godot variables

@@ -10,7 +10,7 @@
 --
 -- Thanks to ruccho (https://github.com/ruccho)
 -- for the "Generate Normal Map" script (https://gist.github.com/ruccho/efa1139ddd6da6d4d22def161209d2e7),
--- which I used to learn how to get the pixels and its colors.
+-- which I used to learn how to get the pixels and its colors from a sprite.
 --------------------------------------------------
 
 -- CHECKS
@@ -32,6 +32,7 @@ end
 
 -- VARIABLES
 --------------------
+-- Get the Aseprite's file title.
 local file_title = app.fs.fileTitle(app.activeCel.sprite.filename)
 
 -- You can optionally add an output directory

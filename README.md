@@ -62,6 +62,7 @@ You can optionally add an output directory (**only if you previously created it 
 | `debug_mode` | `bool` | If `debug_mode` is set to `true`, the output will be shown in the console (instead of overwriting `output_file`). | `false` |
 
 ![Console output](/examples/console-output.png)
+
 *Console output*
 
 ## Changelog

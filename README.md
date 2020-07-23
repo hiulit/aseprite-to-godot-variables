@@ -25,7 +25,7 @@ A Lua script to create arrays of colors and indexes of those colors from an Asep
 * Then you'll get another dialog saying that the script wants to access to a file. Click **Allow Write Access**.
 * You'll get a final dialog informing you where the ouput file is saved.
 
-By default, the output file is saved to Aseprite's scripts folder (where the script is [installed](/#installation)), but you can create a new folder here and use the `output_dir_name` variable to save the output file to that folder. See [Output directory name](/#output-directory-name).
+By default, the output file is saved to Aseprite's scripts folder (where the script is [installed](#installation)), but you can create a new folder here and use the `output_dir_name` variable to save the output file to that folder. See [Output directory name](#output-directory-name).
 
 ## Configurable variables
 
@@ -71,7 +71,7 @@ See [CHANGELOG](/CHANGELOG.md).
 
 ## Authors
 
-* Me 😛  [hiulit](https://github.com/hiulit).
+* Me 😛 [hiulit](https://github.com/hiulit).
 
 ## Credits
 

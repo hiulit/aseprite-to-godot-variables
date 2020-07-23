@@ -3,8 +3,11 @@
 A Lua script to create arrays of colors and indexes of those colors from an Aseprite sprite to be used in Godot.
 
 ![Aseprite](/examples/aseprite.png)
+
 *A sprite in Aseprite.*
+
 ![Code](/examples/code.png)
+
 *Output code from the script.*
 
 ## Prerequisites

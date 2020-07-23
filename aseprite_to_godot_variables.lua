@@ -42,7 +42,9 @@ local output_dir_name = ""
 
 local output_file
 local output_file_name = file_title .. "_variables_output"
-local output_file_path = app.fs.joinPath(app.fs.userConfigPath, "scripts", output_dir_name,  output_file_name .. ".txt")
+-- You can change the output file extension to your liking.
+local output_file_ext = ".txt"
+local output_file_path = app.fs.joinPath(app.fs.userConfigPath, "scripts", output_dir_name,  output_file_name .. output_file_ext)
 
 local cel = app.activeCel
 local img = cel.image

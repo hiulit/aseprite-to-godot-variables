@@ -71,7 +71,7 @@ See [CHANGELOG](/CHANGELOG.md).
 
 ## Authors
 
-* Me 😛 [hiulit](https://github.com/hiulit).
+* Me 😛  [hiulit](https://github.com/hiulit).
 
 ## Credits
 

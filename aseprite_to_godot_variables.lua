@@ -2,7 +2,7 @@
 -- aseprite_to_godot_variables.lua
 --
 -- Aseprite to Godot variables
--- A script to create arrays of colors and indexes of those colors from an Aseprite image to be used in Godot.
+-- A script to create arrays of colors and indices of those colors from an Aseprite image to be used in Godot.
 --
 -- Author: hiulit (https://github.com/hiulit)
 -- Repository: https://github.com/hiulit/aseprite-to-godot-variables
@@ -54,7 +54,7 @@ local bounds_width = cel.bounds.width
 
 -- Those two variables are the names of the output array names.
 -- You can change them to your liking.
-local color_indexes_array_name = "pattern"
+local color_indices_array_name = "pattern"
 local colors_array_name = "colors"
 
 local colors = {}
@@ -103,7 +103,7 @@ local function main()
         output_file = io.open(output_file_path, "w")
     end
     
-    print_or_write("var " .. color_indexes_array_name .. " = [")
+    print_or_write("var " .. color_indices_array_name .. " = [")
 
     for y = 0, bounds_height - 1 do
         print_or_write("[")

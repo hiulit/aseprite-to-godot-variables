@@ -1,6 +1,6 @@
 # Aseprite to Godot variables
 
-A Lua script to create arrays of colors and indexes of those colors from an Aseprite sprite to be used in Godot.
+A Lua script to create arrays of colors and indices of those colors from an Aseprite sprite to be used in Godot.
 
 ![Aseprite](/examples/aseprite.png)
 
@@ -46,11 +46,11 @@ You can optionally add an output directory (**only if you previously created it 
 | ---- | ---- | ----------- | ------- |
 | `output_file_ext` | `string` | The output file extension. | `.txt` |
 
-### Color indexes array name
+### Color indices array name
 
 | Name | Type | Description | Default |
 | ---- | ---- | ----------- | ------- |
-| `color_indexes_array_name` | `string` | The name of the output variable for the color indexes array. | `pattern` |
+| `color_indices_array_name` | `string` | The name of the output variable for the color indices array. | `pattern` |
 
 ### Colors array name
 

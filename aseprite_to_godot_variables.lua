@@ -109,7 +109,7 @@ local function main()
         print_or_write("[")
 
         for x = 0, bounds_width - 1 do
-            if rgbaA(img:getPixel(x, y)) < 255 then
+            if rgbaA(img:getPixel(x, y)) == 0 then
                 print_or_write("null,")
             else
                 local has_color, color_index = has_value(colors, img:getPixel(x, y))
@@ -131,7 +131,7 @@ local function main()
     print_or_write("var " .. colors_array_name .. " = [")
 
     for i, v in ipairs(colors) do
-        print_or_write("Color(" .. round(rgbaR(v)/255, 2) .. "," .. round(rgbaG(v)/255, 2) .. "," .. round(rgbaB(v)/255, 2) .. "," .. rgbaA(v/255) .. "),")
+        print_or_write("Color(" .. round(rgbaR(v)/255, 2) .. "," .. round(rgbaG(v)/255, 2) .. "," .. round(rgbaB(v)/255, 2) .. "," .. round(rgbaA(v)/255, 2) .. "),")
     end
 
     print_or_write("]")

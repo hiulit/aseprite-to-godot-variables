@@ -12,7 +12,7 @@
 
 ## Changed
 
-* All `indexes` strings and references for `indidces`.
+* All `indexes` strings and references for `indices`.
 
 
 ## [1.0.0] - 2020-07-23

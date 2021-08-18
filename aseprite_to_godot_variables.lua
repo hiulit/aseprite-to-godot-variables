@@ -58,8 +58,8 @@ local bounds_width = cel.bounds.width
 
 -- These two variables are the names of the output array names.
 -- You can change them to your liking.
-local color_indices_array_name = "pattern"
-local colors_array_name = "colors"
+local color_indices_array_name = "_pattern"
+local colors_array_name = "_colors"
 
 local colors = {}
 

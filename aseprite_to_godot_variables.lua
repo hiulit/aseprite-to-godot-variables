@@ -63,10 +63,6 @@ local colors_array_name = "colors"
 
 local colors = {}
 
--- If 'debug_mode' is set to 'true',
--- the output will be shown in the console (instead of overwriting 'output_file').
-local debug_mode = false
-
 
 -- GLOBAL FUNCTIONS
 --------------------
@@ -87,12 +83,8 @@ local function has_value(tab, val)
     return false
 end
 
-local function print_or_write(value)
-    if debug_mode then
-        print(value)
-    else
-        output_file:write(value)
-    end
+local function write_to_file(value)
+    output_file:write(value)
 end
 
 
@@ -105,9 +97,7 @@ local function main()
     local rgbaB = app.pixelColor.rgbaB
     local rgbaA = app.pixelColor.rgbaA
     
-    if not debug_mode then
-        output_file = io.open(output_file_path, "w")
-    end
+    output_file = io.open(output_file_path, "w")
     
     print_or_write("var " .. color_indices_array_name .. " = [")
 
@@ -142,10 +132,8 @@ local function main()
 
     print_or_write("]")
 
-    if not debug_mode then
-        output_file:close()
-        app.alert("Output file saved in '" .. output_file_path .. "'.")
-    end
+    output_file:close()
+    app.alert("Output file saved in '" .. output_file_path .. "'.")
 end
 
 main()

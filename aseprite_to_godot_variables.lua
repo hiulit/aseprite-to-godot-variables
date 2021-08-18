@@ -13,8 +13,10 @@
 -- which I used to learn how to get the pixels and its colors from a sprite.
 --------------------------------------------------
 
+
 -- CHECKS
 --------------------
+
 -- Check if Aseprite has the ability to execute scripts.
 if app.apiVersion < 1 then
     return app.alert("This script requires Aseprite >= v1.2.10-beta3.")
@@ -30,8 +32,10 @@ if app.activeCel.image.colorMode ~= ColorMode.RGB then
 	return app.alert("This script is only for RGB Color Mode.")
 end
 
+
 -- VARIABLES
 --------------------
+
 -- Get the Aseprite's file title.
 local file_title = app.fs.fileTitle(app.activeCel.sprite.filename)
 
@@ -52,7 +56,7 @@ local img = cel.image
 local bounds_height = cel.bounds.height
 local bounds_width = cel.bounds.width
 
--- Those two variables are the names of the output array names.
+-- These two variables are the names of the output array names.
 -- You can change them to your liking.
 local color_indices_array_name = "pattern"
 local colors_array_name = "colors"
@@ -66,6 +70,7 @@ local debug_mode = false
 
 -- GLOBAL FUNCTIONS
 --------------------
+
 -- Source: https://www.thetopsites.net/article/50079030.shtml
 local function round(number, decimals)
     local power = 10 ^ decimals
@@ -93,6 +98,7 @@ end
 
 -- MAIN FUNCTION
 --------------------
+
 local function main()
     local rgbaR = app.pixelColor.rgbaR
     local rgbaG = app.pixelColor.rgbaG

@@ -99,38 +99,37 @@ local function main()
     
     output_file = io.open(output_file_path, "w")
     
-    print_or_write("var " .. color_indices_array_name .. " = [")
+    write_to_file("var " .. color_indices_array_name .. " = [\n")
 
     for y = 0, bounds_height - 1 do
-        print_or_write("[")
+        write_to_file("\t[")
 
         for x = 0, bounds_width - 1 do
             if rgbaA(img:getPixel(x, y)) == 0 then
-                print_or_write("null,")
+                write_to_file("null,")
             else
                 local has_color, color_index = has_value(colors, img:getPixel(x, y))
 
                 if has_color then
-                    print_or_write(color_index - 1 .. ",")
+                    write_to_file(color_index - 1 .. ",")
                 else
                     table.insert(colors, img:getPixel(x, y))
-                    print_or_write(#colors - 1 .. ",")
+                    write_to_file(#colors - 1 .. ",")
                 end
             end
         end
 
-        print_or_write("],")
+        write_to_file("],\n")
     end
 
-    print_or_write("]")
-    print_or_write("\n\n")
-    print_or_write("var " .. colors_array_name .. " = [")
+    write_to_file("]\n")
+    write_to_file("var " .. colors_array_name .. " = PoolColorArray([\n")
 
     for i, v in ipairs(colors) do
-        print_or_write("Color(" .. round(rgbaR(v)/255, 2) .. "," .. round(rgbaG(v)/255, 2) .. "," .. round(rgbaB(v)/255, 2) .. "," .. round(rgbaA(v)/255, 2) .. "),")
+        write_to_file("\tColor(" .. round(rgbaR(v)/255, 2) .. "," .. round(rgbaG(v)/255, 2) .. "," .. round(rgbaB(v)/255, 2) .. "," .. round(rgbaA(v)/255, 2) .. "),\n")
     end
 
-    print_or_write("]")
+    write_to_file("])")
 
     output_file:close()
     app.alert("Output file saved in '" .. output_file_path .. "'.")

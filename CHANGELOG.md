@@ -11,6 +11,8 @@
 - Default array names:
   - ~~`pattern`~~ for `_pattern` and ~~`colors`~~ for `_colors`.
 
+- The variable `_colors` is now a `PoolColorArray`.
+
 - Internal function:
   - ~~`print_or_write`~~ for ~~`write_to_file`~~.
 

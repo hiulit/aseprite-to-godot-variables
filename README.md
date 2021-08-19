@@ -50,7 +50,7 @@ You can optionally add an output directory (**only if you previously created it 
 
 | Name | Type | Description | Default |
 | ---- | ---- | ----------- | ------- |
-| `color_indices_array_name` | `string` | The name of the output variable for the color indices array. | `_pattern` |
+| `color_indices_array_name` | `string` | The name of the output variable for the color indices array. | `_sprite` |
 
 ### Colors array name
 
@@ -102,7 +102,7 @@ Thank you very much!
 Thanks to:
 
 - [ruccho](https://github.com/ruccho) - For the [Generate Normal Map](https://gist.github.com/ruccho/efa1139ddd6da6d4d22def161209d2e7) script, which I used to learn how to get the pixels and its colors from a sprite.
-- **Alícia Folgarona Ribot** ([@pingudroid](https://twitter.com/pingudroid)) - For creating the pattern in the example.
+- **Alícia Folgarona Ribot** ([@pingudroid](https://twitter.com/pingudroid)) - For creating the sprite in the example.
 
 ## 📝 Licenses
 
